@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Page title</title>
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      
+      body {
+         height: 100vh;
+         width: 100vw;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background-color: #2c3457;
+         margin: 0;
+         font-family: 'Poppins', sans-serif;
+      }
+
+      .container {
+         height: 250px;
+         width: 250px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         background-color: #5262a4;
+         background-image: url('image.jpg');
+         background-size: cover;
+         border-radius: 10px;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+         padding: 15px;
+         transition: transform 0.3s ease;
+      }
+
+      label {
+         width: 100%;
+         margin-bottom: 15px;
+         color: #fff;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+         width: 100%;
+         padding: 10px;
+         border: none;
+         border-radius: 5px;
+         box-sizing: border-box;
+         background-color: transparent;
+         color: #fff;
+         border: 1px solid #fff;
+         transition: transform 0.3s ease;
+         outline:none;
+      }
+
+      input::placeholder {
+         color: #fff;
+      }
+
+      button {
+         background-color: transparent;
+         color: #fff;
+         width: 100%;
+         padding: 10px;
+         border: none;
+         border-radius: 5px;
+         border: 1px solid #fff;
+         transition: transform 0.3s ease;
+      }
+
+      .container:hover {
+         transform: translateY(-5px);
+         transition: transform 0.3s ease;
+      }
+
+      button:hover,
+      input:hover {
+         transform: translateY(-5px);
+         transition: transform 0.3s ease;
+      }
+
+      input:hover + label,
+      input:focus + label {
+         opacity: 1;
+         transform: translateY(-5px);
+         transition: all 0.3s ease;
+      }
+
+      label {
+         font-family: 'Poppins', sans-serif;
+         font-size: 16px;
+         color: #fff;
+         opacity: 1;
+         transform: translateY(0px);
+         transition: all 0.3s ease;
+      }
+
+      h3 {
+         color: #fff;
+         margin-left: -55%;
+         font-size: 1rem;
+         transition: transform 0.3s ease;
+      }
+
+      h3:hover {
+         transform: translateY(-5px);
+         transition: transform 0.3s ease;
+      }
+
+      .label {
+         font-family: 'Poppins', sans-serif;
+         font-size: 0.8rem;
+         color: #fff;
+         font-weight: 200;
+      }
+   </style>
+</head>
+<body>
+   <div class="container">
+      <h3>Login</h3>
+      <label for="Email">Email
+         <input type="text" id="Email" placeholder="Email">
+      </label>
+      <label for="password">Password 
+         <input type="password" id="password" placeholder="Password">
+      </label>
+      <button>Log in</button>
+   </div>
+</body>
+</html>
